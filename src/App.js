@@ -1,5 +1,12 @@
+import Search from './components/Search'
+
 function App() {
-  return <h1>Hello World</h1>
+  console.log('My key', process.env.REACT_APP_MY_API_KEY)
+  return (
+    <>
+      <Search />
+    </>
+  )
 }
 
 export default App
