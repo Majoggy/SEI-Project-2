@@ -1,10 +1,11 @@
-import Search from './components/Search'
+import Header from './components/Header'
+import Main from './components/Main'
 
 function App() {
-  console.log('My key', process.env.REACT_APP_MY_API_KEY)
   return (
     <>
-      <Search />
+      <Header />
+      <Main />
     </>
   )
 }

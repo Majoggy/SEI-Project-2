@@ -1,17 +1,4 @@
-#title {
-  margin-top: 50px;
-  text-align: center;
-}
-
-#partOf {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#searchBar {
-  width: 800px;
-  border: 2px solid black;
-}
+// * Background/general
 
 body {
   background-color: rgb(240, 240, 240);
@@ -22,10 +9,45 @@ body {
   border: 2px solid black;
 }
 
+// * Header/Logo
+
+.logo-block {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Staatliches', cursive;
+  font-size: 500%;
+  margin-bottom: 15px!important;
+  padding-bottom: 0!important;
+}
+
+.main-box {
+  background-color: rgb(233, 235, 245);
+  box-shadow: none!important;
+}
+
+.no-shadow {
+  box-shadow: none!important;
+}
+
+// * Main content
+
+#searchBar {
+  width: 800px;
+  border: 2px solid black;
+}
+
 .search-wrap {
   display: flex;
   justify-content: space-between;
   
+}
+
+#partOf {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .button-wrap {
@@ -36,19 +58,41 @@ body {
   justify-content: space-evenly;
 }
 
-#audio-button {
-  margin-bottom: 25px;
-  // margin-top: ;
-  // margin-left: ;
+.highlight {
+  background-color: yellow;
 }
 
-.bold-text {
-  background-color: yellow;
+.highlight-red {
+  background-color: red;
 }
 
 .button {
   border: 2px solid black!important;
 }
+
+.multiline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-word {
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+
+.phonetic {
+  height: 22px;
+  margin-left: 20px;
+
+}
+
+.big-word {
+  margin-bottom: 0px !important;
+}
+
+// * Media Queries
+
 @media(max-width: 1407px) {
   .button-wrap {
     margin: 10px 0px 10px 15px;
@@ -65,7 +109,7 @@ body {
   .search-wrap {
     display: block;
   }
-
+  
   .button-wrap {
     margin: -10px 0px 12px 0px;
     width: Calc(100vw - 92px);
