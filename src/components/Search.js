@@ -17,7 +17,7 @@ function Search({ data, audioObj, handleLink }) {
   // applies a highlight class on hover
   const handleEnter = async (e) => {
     e.target.classList.add('highlight')
-  }
+  
   // removes highlight classes on hover
   const handleLeave = async (e) => {
     e.target.classList.remove('highlight')
@@ -27,14 +27,15 @@ function Search({ data, audioObj, handleLink }) {
   // returns sentences with each word wrapped in a span with onClicks
   const wordLinks = (text, isSentence) => {
     const texts = text.split(' ')
-
+    console.log(text, isSentence)
     // set first letter capital and end in full stop
-    if (isSentence) {
+    if ((isSentence) && text !== '') {
       const firstWord = texts[0].split('')
       firstWord[0] = firstWord[0].toUpperCase()
       texts[0] = firstWord.join('')
       const lastWord = texts[texts.length - 1].split('')
-      if (lastWord[lastWord.length - 1] !== '.') {
+      const lastChar = lastWord[lastWord.length - 1]
+      if (!((lastChar === '.') || (lastChar === '!') || (lastChar === '?'))) {
         lastWord.push('.')
         texts[texts.length - 1] = lastWord
       }
