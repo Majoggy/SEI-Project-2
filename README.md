@@ -9,7 +9,7 @@ Diction-Airy was my second project for General Assembly’s Software Engineering
 
 Diction-Airy is a single page application that searches a dictionary API as you type. Every word on the page is clickable and leads to another definition, and previous searches can be recalled using a history function. We envisioned it as a bit of a rabbit hole for users, with a user-friendly UI that makes searching for words fun and engaging.
 
-It is deployed using Netlify and available here.
+It is deployed using Netlify and available [here](https://diction-airy.netlify.app/).
 
 ## Brief
 
